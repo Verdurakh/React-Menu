@@ -9,6 +9,8 @@ export function getChildren(child?: Menu[]) {
 }
 
 
+
+
 interface props {
     menu: Menu[];
 }
@@ -16,19 +18,17 @@ interface props {
 export function MenuItem(props: props) {
     return (
 
-        <div>
-            <div>
-                {props.menu.map(({ name, children }) => (
-                    <div key={name}>{name}
-                        <div>
-                            <MenuItem menu={getChildren(children)} />
-                        </div>
+        <ul>
+            {props.menu.map(({ name, children }) => (
+                <li key={name}>
+                    {name}
+                    <MenuItem menu={getChildren(children)} />
 
-                    </div>
-                ))}
-            </div>
 
-        </div>
+                </li>
+            ))}
+        </ul>
+
 
     )
 }
