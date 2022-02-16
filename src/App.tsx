@@ -7,7 +7,7 @@ import Accordion from 'react-bootstrap/Accordion'
 
 function App() {
   return (
-    <Accordion className='Menu' alwaysOpen={true} defaultActiveKey={"Some node 1.3.1"}
+    <Accordion className='Menu' alwaysOpen={true}
       onSelect={(e) => {
         if (e && e.length > 0)
           console.log(e[e.length - 1]);
