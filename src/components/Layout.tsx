@@ -6,19 +6,7 @@ interface Props {
     children: JSX.Element[] | JSX.Element
 }
 const Layout = (children: Props) => {
-    let texgfdgdf: string = "tja";
-
     const [title, setTitle] = useState("start")
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         //texgfdgdf = "kan denna ändras?"
-    //         //console.log(texgfdgdf);
-    //         setTitle("test");
-    //     }, 3000)
-    // })
-
-
 
     return (
         <div>
