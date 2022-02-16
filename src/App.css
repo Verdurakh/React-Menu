@@ -1,0 +1,7 @@
+.NoChildren button.accordion-button::after{
+   display: none;
+}
+
+.Menu{
+    max-width: 512px;;
+}
