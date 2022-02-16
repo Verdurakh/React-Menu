@@ -1,22 +1,6 @@
 import React from "react";
-import Menu from "../models/Menu";
+import { Menu, getChildren, hasChildren } from "../models/Menu";
 import Accordion from 'react-bootstrap/Accordion'
-
-
-
-
-export function getChildren(child?: Menu[]) {
-    if (child && child.length > 0)
-        return child;
-
-    return [] as Menu[];
-}
-
-export function hasChildren(child?: Menu[]) {
-    if (child && child.length > 0)
-        return true;
-    return false;
-}
 
 
 
