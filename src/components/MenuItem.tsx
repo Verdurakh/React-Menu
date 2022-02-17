@@ -1,18 +1,15 @@
 import React from "react";
-import { Menu, getChildren, hasChildren } from "../models/Menu";
+import { getChildren, hasChildren } from "../models/Menu";
 import Accordion from 'react-bootstrap/Accordion'
+import { MenuArrayProp } from "../models/Props";
 
 
 
-interface props {
-    menu: Menu[];
-}
-
-export function MenuItem(props: props) {
+export function MenuItem({ menu }: MenuArrayProp) {
 
     return (
         <div>
-            {props.menu.map(({ name, children }) => (
+            {menu.map(({ name, children }) => (
                 <Accordion.Item eventKey={name} key={name}>
                     <Accordion.Header className={hasChildren(children) ? "" : "NoChildren"}>  {name}</Accordion.Header>
                     {hasChildren(children) &&

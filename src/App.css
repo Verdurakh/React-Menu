@@ -1,7 +1,16 @@
 body{
     background-color: #513675;
 }
+.accordion-button{
+    background-color: white;
+}
+.accordion-button:hover{
+    background-color: #9D88B3;
+}
 
+.accordion-button:not(.collapsed) {
+background-color: #FCEAFF;
+}
 
 .NoChildren button.accordion-button::after{
    display: none;
@@ -10,10 +19,14 @@ body{
 
 .Header{
     height: 80px;
-    color: #FCEAFF
-    ;
+    color: #FCEAFF    ;
     padding: 5px;
     text-align: center;
+}
+
+.Header a{
+    color: #FCEAFF;
+    text-decoration: none;
 }
 
 
@@ -21,6 +34,12 @@ body{
     padding:0 5px 0 5px;
     width: 30%;
 }
+
+.Error{
+    color:#D65C75 ;
+}
+
+
 
 .Main{
     border-top-left-radius: calc(0.25rem - 1px);
@@ -47,4 +66,8 @@ body{
     margin: 5px;
     color: #FCEAFF    ;
     width: 20%;
+}
+
+.BlackAndWhite{
+    filter:brightness(0) invert(1)
 }

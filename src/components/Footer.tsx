@@ -1,7 +1,9 @@
 function Footer() {
     return (
         <div className="Footer">
-            Made by: Andreas Andersson
+            <div>
+                Made by: Andreas Andersson
+            </div>
         </div>
     )
 }

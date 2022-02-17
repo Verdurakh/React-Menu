@@ -3,11 +3,11 @@ import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
 import Sidebar from './Sidebar';
-interface Props {
-    children: JSX.Element[] | JSX.Element
-}
-const Layout = (children: Props) => {
-    const [title, setTitle] = useState("start")
+import { ChildProp } from '../models/Props';
+
+
+const Layout = ({ children }: ChildProp) => {
+    const [title, setTitle] = useState("")
 
     return (
         <div>

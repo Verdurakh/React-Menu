@@ -1,7 +1,9 @@
 function Header() {
     return (
         <div className="Header">
-            <h1>SKF super mega menu</h1>
+            <a href="/">
+                <h1>Super mega menu</h1>
+            </a>
         </div>
     )
 }
