@@ -1,4 +1,9 @@
-Build using React and Typescript.
+To start.
+run: npm install and then npm start in the root folder (where package.json exists)
+
+
+
+Built using React and Typescript.
 Includning React bootstrap and react query
 
 Used Accordion from Boostrap for the Menu, would suggest that it is custom built for better customization, had to do some hacks to have it behave the way I wanted.
