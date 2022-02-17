@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
 import Sidebar from './Sidebar';
@@ -15,6 +16,7 @@ const Layout = (children: Props) => {
                 <Sidebar callback={(newTitle: string) => setTitle(newTitle)} />
                 <Main text={title} />
             </div>
+            <Footer />
         </div>
     )
 }

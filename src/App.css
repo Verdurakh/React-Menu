@@ -9,34 +9,42 @@ body{
 
 
 .Header{
-    height: 100px;
-    background-color: #513675;
-    color: white;
+    height: 80px;
+    color: #FCEAFF
+    ;
+    padding: 5px;
+    text-align: center;
 }
 
-.Header h1{
-    height: 100px;
-    background-color: #513675;
-    color: white;
-}
 
 .Sidebar{
     padding:0 5px 0 5px;
     width: 30%;
-    background-color: #513675;
 }
 
 .Main{
     border-top-left-radius: calc(0.25rem - 1px);
     border-top-right-radius: calc(0.25rem - 1px);
-    padding:5px;
-    background-color: white;
+    padding:10px;
+    background-color: #8466AA;
+    color: #FCEAFF
+    ;
     width: 100%;
 }
 
 .PageWrapper{
 
-    width: 100%;
-    height:98vh;
+    width: 99vh;
+    height:78vh;
     display: flex;
+}
+
+.Footer{
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    background-color: #8466AA;
+    padding: 10px;
+    margin: 5px;
+    color: #FCEAFF    ;
+    width: 20%;
 }
